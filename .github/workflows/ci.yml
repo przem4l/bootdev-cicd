@@ -21,7 +21,6 @@ jobs:
       - name: Run get_api_key test
         run: go test -cover ./...
 
-job:
   tests:
     name: Style
     runs-on: ubuntu-latest
