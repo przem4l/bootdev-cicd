@@ -1,5 +1,9 @@
 # learn-cicd-starter (Notely)
 
+Tests status:
+
+![Tests status](https://github.com/przem4l/bootdev-cicd/actions/workflows/ci.yml/badge.svg)
+
 This repo contains the starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
 
 ## Local Development
