@@ -11,14 +11,14 @@ func TestGetAPIKey(t *testing.T) {
 
 	tests := []struct {
 		name    string
-		headers  http.Header
+		headers http.Header
 		want    string
 		wantErr error
 	}{
 		{
-			name:   "returns api key from authorization header",
+			name:    "returns api key from authorization header",
 			headers: http.Header{"Authorization": []string{"ApiKey abc123"}},
-			want:   "abc123",
+			want:    "abc123",
 		},
 		{
 			name:    "fails when authorization header is missing",
