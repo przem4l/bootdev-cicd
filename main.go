@@ -6,8 +6,8 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"strconv"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/go-chi/chi"
@@ -98,7 +98,7 @@ func main() {
 	srv := &http.Server{
 		Addr:              ":" + strconv.Itoa(portNumber),
 		Handler:           router,
-		ReadHeaderTimeout:  5 * time.Second,
+		ReadHeaderTimeout: 5 * time.Second,
 	}
 
 	log.Printf("Serving on port: %d\n", portNumber)
